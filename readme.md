@@ -14,7 +14,7 @@
                     │   ┌────▼────┐   │                       
 ┌──────────┐        └──►│   NSQ   │◄──┘                       
 │          │            └────┬────┘                           
-│  Redash  │          ┌──────┴───────┐                        
+│ BeeKeeper│          ┌──────┴───────┐                        
 │          │          │              │                        
 └──────────┘     ┌────▼───┐     ┌────▼───┐                    
      ▲           │ hunter ├──┬──┤ hunter │  ...              
@@ -29,7 +29,7 @@ POT: 蜜罐节点
 NSQ: 消息队列服务器 NSQD
 hunter: 分析节点
 Clickhouse: 数据库
-Redash: 可视化分析平台
+BeeKeeper: 蜜网管理平台
 
 蜜罐节点将流量分析后发送到消息队列中，分析节点消费消息队列中的数据，将数据存储到数据库中，最后通过可视化工具展示数据。
 ```
@@ -225,6 +225,14 @@ type SSHSession struct {
 ![img.png](demo1.png)
 
 ## 数据分析
+### BeeKeeper
+
+![beekeeper](beekeeper-1.png)
+![beekeeper-2](beekeeper-2.png)
+![beekeeper-3](beekeeper-3.png)
+![beekeeper-4](beekeeper-4.png)
+![beekeeper-5](beekeeper-5.png)
+
 
 ## 开源数据
 开源互联网背景噪音数据集，包含了2024年9月到2025年1月的约1000万条HTTP请求数据。，数据集为Parquet格式，包含了请求的时间、源IP端口、请求方法、请求路径、请求头、请求体等信息。
